@@ -4,7 +4,7 @@
 
 ### COLLABORATION STEPS
 
-- Partner B accepts the invite on emeil or github.
+- Partner B accepts the invite on email or github.
 
 - Partner B then proceeds to clone The repo created by Partner A
 
