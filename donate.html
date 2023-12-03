@@ -29,32 +29,149 @@
 
 	<!-- CSS File -->
 	<link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/donate.css">
 
 </head>
 
+<!-- ========== Body Begins Here ========== -->
+
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
-	<section class="Donate">
-		<div class="paypal">
-			<div id="donate-button-container">
-				<div id="donate-button"></div>
-				<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-				<script>
-				PayPal.Donation.Button({
-				env:'production',
-				hosted_button_id:'QCWWELN2KFKWQ',
-				image: {
-				src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-				alt:'Donate with PayPal button',
-				title:'PayPal - The safer, easier way to pay online!',
-				}
-				}).render('#donate-button');
-				</script>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="container-fluid d-flex align-items-center justify-content-between">
+
+			<a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+				<img src="assets/img/logo/logo3.png" alt="Securedd Logo">
+			</a>
+			<!-- Nav Bar Has Beed Removed -->
+			<a class="btn-getstarted" href="index.html#about">Become a member</a>
+		</div>
+	</header><!-- End Header -->
+
+	<!-- ========== Main Section ========== -->
+
+	<main id="main">
+
+		<!-- ====== Donation ====== -->
+		<section class="Donate">
+			<div class="section-title">
+				<h2>Support Securedd</h2>
+				<p>Colaborate . Innovate . Elevate</p>
+			</div>
+
+			<div class="Donate-box">
+				<!-- ===== PayPal ===== -->
+				<div class="paypal">
+					<div class="section-title">
+						<h4>Pay pal</h4>
+					</div>
+					<div id="donate-button-container">
+						<div id="donate-button"></div>
+						<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+						<script>
+							PayPal.Donation.Button({
+								env: 'production',
+								hosted_button_id: 'QCWWELN2KFKWQ',
+								image: {
+									src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+									alt: 'Donate with PayPal button',
+									title: 'PayPal - The safer, easier way to pay online!',
+								}
+							}).render('#donate-button');
+						</script>
+					</div>
 				</div>
+
+				<!-- ===== M-pesa ===== -->
+				<div class="mpesa">
+					<div class="section-title">
+						<h4>Mpesa</h4>
+					</div>
+					<h4>Under Development ...</h4>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer" class="footer">
+
+		<div class="container footer-top">
+			<div class="row gy-4">
+				<div class="col-lg-5 col-md-12 footer-about">
+					<a href="index.html" class="logo d-flex align-items-center">
+						<span>Securedd</span>
+					</a>
+					<p>We aspire to be at the forefront of cybersecurity education, innovation, and collaboration,
+						driving
+						positive change and advancement in the field.</p>
+					<div class="social-links d-flex mt-4">
+						<a href="https://www.twitter.com/securedd_"><i class="bi bi-twitter"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+						<a href=""><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-6 footer-links">
+					<h4>Company</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Donations</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-6 footer-links">
+					<h4>Need help?</h4>
+					<ul>
+						<li><a href="#">Securedd</a></li>
+						<li><a href="#">Securedd</a></li>
+						<li><a href="#">Securedd</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+					<h4>Keep in touch</h4>
+					<p>Nairobi, Kenya</p>
+					<p class="mt-4"><strong>Phone:</strong> <span>+254 745 393 496</span></p>
+					<p><strong>Email:</strong> <span>info@example.com</span></p>
+				</div>
+
+			</div>
 		</div>
-		<div class="mpesa">
-			
-		</div>
-	</section>
+		<hr>
+		<div class="container copyright text-center mt-4">
+			<p>&copy; <span>Copyright</span> <strong class="px-1">Securedd</strong> <span>All Rights Reserved</span></p>
+
+	</footer><!-- End Footer -->
+
+	<!-- Scroll Top Button -->
+	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+
+	<!-- Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
