@@ -134,12 +134,17 @@ section {
 	border-right: none;
 }
 
+/*......PayPal......*/
+
 .paypal {
 	display: inherit;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+
+
+/*........Mpesa...... */
 
 .mpesa {
 	margin-top: 50px;
